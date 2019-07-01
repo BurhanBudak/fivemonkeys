@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>5monkey</title>
+</head>
+<body>
+    <main class="container">
+        <section class="item1">
+            <div id="acc">
+                <div class="circle">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <h2 id="till">Tillbehör</h2>
+            </div>
+            <div id="title">
+                <h1>Kassa</h1>
+            </div>
+            <div class="info">
+                <div id="margin">
+                    <h2>Kunduppgifter</h2>
+                    <p>Hämta dina adressuppgifter genom att fylla i ditt personnummer.</p>
+                </div>
+                <div class="form" >
+                    <small>PERSONNUMMER:</small>
+                    <form>
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1"  id="line">
+                            <!-- <span><i class="fas fa-minus"></i></span> -->
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                            <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        </form>
+                </div>
+                <div id="margin">
+                    <p>Bo Göran</p>
+                    <br>
+                    <address>
+                        Rävgatan 1b <br>
+                        12345 Boliden
+                    </address>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div id="margin">
+                    <h2>Kontaktuppgifter</h2>
+                    <p>Fyll i ditt mobilnummer för att få ett SMS när din order är redo</p>
+                </div>
+                <div class="form">
+                    <small>MOBILNUMMER:</small>
+                    <div id="row">
+                    <form>
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                        <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
+                    </form>
+                    <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="basket">
+                
+                <div class="row" id="row-1">
+                        <figure class="pic">
+                            <img src="https://cdn1.cdnme.se/cdn/9-2/2649444/images/2011/boschpst700pe_147634066_thumb.jpg" alt="STICK">
+                        </figure>
+                        <div class="dis">
+                                <p>Bosch</p>
+                                <small>PST 700 E</small> 
+                        </div>
+                    <div class="plus_minus">
+                        <button type="button" id="plus"><i class="fas fa-plus-circle"></i></button>
+                        <span id="count">0</span>
+                        <button type="button" id="minus"><i class="fas fa-minus-circle"></i></button>
+                    </div>
+                    <div class="subtotal">
+                        <span id="subt" value="599">0</span>
+                    </div>
+                </div> <!--Row-1-->
+
+                <div class="row" id="row-2">
+                        <figure class="pic">
+                            <img src="https://www.bosch-do-it.de/media/diy/diyaccessorymedia/200534/201660/8764/8764_pic_prod/292089_231_226.png" alt="Blades">
+                        </figure>
+                        <div class="dis">
+                                        <p>Bosch</p>
+                                        <small>10 delars sticksågsblad trä/metall</small>
+                        </div>
+                    <div class="plus_minus">
+                        <button type="button" id="plus">
+                            <i class="fas fa-plus-circle"></i>
+                        </button>
+                        <span id="count">0</span>
+                        <button type="button" id="minus">
+                            <i class="fas fa-minus-circle"></i>
+                        </button>
+                    </div>
+                    <div class="subtotal">
+                        <span id="subt" value="139">0</span>
+                    </div>
+
+                </div><!--Row-2-->
+
+                <div class="row" id="row-3">
+                   
+                </div> <!--Row-3-->
+           
+               
+                
+            
+                <div class="row" id="row-4">
+                        <div class="pic">
+                                <i class="fas fa-truck fa-flip-horizontal"></i>
+                                
+                        </div>
+                        <div class="round">
+                            <input id="checkbox-1" class="checkbox-custom" name="heckbox-2" type="checkbox" value="79" >
+                                <label for="checkbox-1"></label>
+                                <p class="checkbox-custom-label">Hemleverans</p>
+                               
+                        </div>
+                    <div class="subtotal">
+                        <span id="subt">79</span>
+                    </div>
+
+                </div> <!--Row-4-->
+
+                <div class="row" id="row-5">
+                        <div class="pic">
+                                <i class="fas fa-store-alt"></i>
+                        </div>
+                        <div class="round">
+                            <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" value="0" checked>
+                                <label for="checkbox-2"></label>
+                                <p class="checkbox-custom-label">Hämta i butik</p>
+                              
+                        </div>
+                </div> <!--Row-5-->
+            
+
+            <div id="row-6">
+                <div class="abc">
+                        <p>Att betala:</p>
+                        <small>Varav moms:</small>
+                </div>
+                <div class="def">
+                     <span id="total">0</span>
+                     <small ><span id="moms">0</span></small>
+                </div>
+            </div>
+         
+    </div><!--basket-->    
+        </section>
+
+        <section class="item2">
+        <div class="text">
+            <h4>Kassan</h4><br>
+            <p>Använd knappsatsen nedan för att mata in ditt personnummer respektive mobilnummer i formuläret till vänster. Välj sedan ditt önskade leveranssätt och klicka på "Beställ".</p>
+        </div>
+        <div class="keypad">
+            <button class="btn" value="1">1</button>
+            <button class="btn" value="2">2</button>
+            <button class="btn" value="3">3</button>
+            <button class="btn" value="4">4</button>
+            <button class="btn" value="5">5</button>
+            <button class="btn" value="6">6</button>
+            <button class="btn" value="7">7</button>
+            <button class="btn" value="8">8</button>
+            <button class="btn" value="9">9</button>
+            <button class="btn" value="delete"><i class="fas fa-backspace"></i></button>
+            <button class="btn" value="0">0</button>
+            <button class="btn" value="enter"><i class="fas fa-check"></i></button>
+        </div>
+        </section>
+        
+        <section class="item3">
+            <i class="fas fa-reply"></i>
+            <h2>Fortsätt handla</h2>
+        </section>
+
+        <section class="item4">
+            <h2>BESTÄLL</h2>
+            <div class="circle">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
