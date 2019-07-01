@@ -116,7 +116,7 @@ $(function () {
     //         $(this).next('.inputs').focus();
     //       }
     //  }
-    $('.inputs').on('click','.keypad.button.btn',function () {
+    $('.inputs').on('click','.keypad button.btn',function () {
         $(".inputs").val() = $(this).val();
         if (this.value.length == this.maxLength) {
           $(this).next('.inputs').focus();
