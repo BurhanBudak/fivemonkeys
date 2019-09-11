@@ -27,9 +27,9 @@
                     <h2>Kunduppgifter</h2>
                     <p>Hämta dina adressuppgifter genom att fylla i ditt personnummer.</p>
                 </div>
-                <div class="form" >
-                    <small>PERSONNUMMER:</small>
-                    <form>
+                <div class="form">
+                    <small id="pnr">PERSONNUMMER:</small>
+                    <form id="one">
                             <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
                             <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
                             <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
@@ -59,10 +59,10 @@
                     <h2>Kontaktuppgifter</h2>
                     <p>Fyll i ditt mobilnummer för att få ett SMS när din order är redo</p>
                 </div>
-                <div class="form">
-                    <small>MOBILNUMMER:</small>
+                <div class="form" >
+                    <small id="mnr">MOBILNUMMER:</small>
                     <div id="row">
-                    <form>
+                    <form id="two">
                         <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
                         <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
                         <input class="inputs" inputmode="numeric" pattern="[0-9]" maxlength="1">
@@ -189,7 +189,7 @@
             <button class="btn" value="9">9</button>
             <button class="btn" value="delete"><i class="fas fa-backspace"></i></button>
             <button class="btn" value="0">0</button>
-            <button class="btn" value="enter"><i class="fas fa-check"></i></button>
+            <button class="btn" id="enter"><i class="fas fa-check"></i></button>
         </div>
         </section>
         

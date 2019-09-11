@@ -1,6 +1,8 @@
 $(function () {
     $main = $('.container');
-
+    
+    let inputstwo = document.querySelectorAll('form#one>.inputs');
+    $inputs = $('.inputs');
     $pm = $('.plus_minus');
     $basket= $('.basket');
     $total = $('#total');
@@ -53,35 +55,14 @@ $(function () {
         if ($amount>0) {
             $qty.text($amount-=1);
             $subtotal.text($amount*$price);
-            console.log($price);
-            console.log(Number($subtotal.text()));
             remove($price);
         }
         else{
             $qty.text($amount=0);
             $subtotal.text($amount*$price);
-            // remove($price);
-            // console.log(Number($subtotal.text()));
+          
         }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     $('input[type="checkbox"]').on('change', function() {
         $('input[type="checkbox"]').not(this).prop('checked', false);
         let $cargo = Number($(this).attr('value'));
@@ -94,32 +75,59 @@ $(function () {
         }
      });
 
-    //  $keypad.on('click','button.btn',function () {
-    //     let data = $(this).val();
-    //     $(".inputs").append(data);
-    //     $('.inputs').keyup(function () {
-    //         if (this.value.length == this.maxLength) {
-    //           $(this).next('.inputs').focus();
-    //         }
-    //     });
-        
-    //  });
 
-    //  $('.form').click(function() {
-    //     $('form:first *:input[type!=hidden]:first').focus();
-    // });
-
-
-    //  function inputs(data) {
-    //     $('.inputs').val() = data;
-    //     if (this.value.length == this.maxLength) {
-    //         $(this).next('.inputs').focus();
-    //       }
-    //  }
-    $('.inputs').on('click','.keypad button.btn',function () {
-        $(".inputs").val() = $(this).val();
-        if (this.value.length == this.maxLength) {
-          $(this).next('.inputs').focus();
+     $('#pnr').click(function() {
+         let i = 0;
+        $('form#one:first *:input[type!=hidden]:first').focus();
+        let $inputsone = $('form#one>.inputs');
+        $keypad.on('click','button.btn',function () {
+        let data = $(this).val();
+        if (data === 'delete') {
+            i--;
+            $inputsone.eq(i).prev('.inputs').focus();
+            $inputsone.eq(i).val("");
         }
-    }); 
+        else{
+         $inputsone.eq(i).val(data);
+        i++;
+        if ($inputsone.eq(i).val().length == $inputsone.eq(i).maxLength) {
+            $inputsone.eq(i).next('.inputs').focus();
+            }
+        }
+        $('button#enter').on('click', function () {
+            e.preventDefault();
+            $inputsone.eq(i).trigger("focusout");
+        })
+
+         });
+    });
+
+    $('#mnr').click(function() {
+        let i = 0;
+        $('form#two:first *:input[type!=hidden]:first').focus();
+        $('form#one:first').blur();
+        let $inputstwo = $('form#two>.inputs');
+        $keypad.on('click','button.btn',function () {
+            let data = $(this).val();
+            if (data === 'delete') {
+                i--;
+                $inputstwo.eq(i).prev('.inputs').focus();
+                $inputstwo.eq(i).val("");
+            }
+            else{
+             $inputstwo.eq(i).val(data);
+            i++;
+            if ($inputstwo.eq(i).val().length == $inputstwo.eq(i).maxLength) {
+                $inputstwo.eq(i).next('.inputs').focus();
+                }
+            }
+            $('button#enter').on('click', function () {
+                e.preventDefault();
+                $inputsone.eq(i).trigger("focusout");
+            })
+    
+    
+             });
+    });
+
 });
